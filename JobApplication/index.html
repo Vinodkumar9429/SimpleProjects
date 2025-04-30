@@ -4,9 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Application</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+<section class="mainsec">
+    <h1>Job Application for Web Development at GOLDMAN SACHS</h1>
+    <form action="none.js">
+        <div class="linemain">Personal Info</div>
+        <div class="name">
+    <div class="formgroup1 formgroup">
+        <label for="Name">First Name</label>
+        <input 
+        type="text" 
+        name="myName" 
+        id="Name" 
+        placeholder="Enter your first name" 
+        pattern="[A-Za-z]{3,}" 
+        title="Please enter a name with atleast 3 characters either uppercase or lowercase" 
+        required>
+    </div>
+    <div class="formgroup2 formgroup">
+        <label for="Name2">Last Name</label>
+        <input type="text" name="myName2" id="Name2" placeholder="Enter your last name">
+    </div>
+    </div>
+    <div class="rowtwo">
+        <div class="email">
+    <label for="Email">Email</label>
+    <input type="email" id="Email" placeholder="Enter your email">
+        </div>
+        <div class="dob">
+    <label for="DateOfBirth">Date Of Birth</label>
+    <input type="date" name="myDateOfBirth" id="DateOfBirth" required>
+</div>
+    </div>
+    <div class="gender">
+        <label>Select Your Gender</label>
+        <input type="radio" value="Male" id="Male" name="Gender" required>
+        <label for="Male">Male</label>
+        <input type="radio" value="Female" name="Gender" id="Female" required>
+        <label for="Female">Female</label>
+
+    </div>
+    <div class="line">Professional Info</div>
+    <div class="career">
+    <div class="role">
+        <label for="Role">Select The Role You Are Targeting</label>
+        <select name="myRole" id="Role">
+            <option value="" selected disabled>Select The Role</option>
+            <option value="FrontEnd">Front End Developer</option>
+            <option value="BackEnd">Back End Developer</option>
+            <option value="Fullstack">Full Stack Developer</option>
+            <option value="UIUX">UI UX Designer</option>
+            <option value="DevOps">DevOps</option>
+        </select>
+    </div>
+    <div class="exp">
+        <label for="Experience">Years Of Experience</label>
+        <input type="number" name="myExperience" id="Experience" min="0" max="30" required>
+    </div>
+</div>
+    <div class="about">
+        <label for="About">Tell Us About Yourself</label>
+        <textarea name="myAbout" id="About" required></textarea>
+    </div>
+    <button type="submit" onclick="return confirm('Are you sure that you would want to submit this form ?')" class="submit">
+        Submit
+    </button>
+    <button type="reset" onclick="return confirm('Are you sure tha you would want to reset the details filled in this form ?')" class="reset">
+        Reset
+    </button>
+    </form>
+</section>
 </body>
 </html>
